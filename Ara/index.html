@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Step Form</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <nav>
+            <ul>
+                <li><a class="current" href="index.html">Описание</a></li>
+                <li><a href="ingredient.html">Ингридиенты</a></li>
+                <li><a href="param.html">Параметры</a></li>
+                <li><a href="glass.html">Бокалы</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <fieldset>
+                <legend>Описание</legend>
+                <form>
+                    <p>
+                        <img src="Img/glass-1.png" alt="glass-1" width="74" height="131">
+                        <button type="submit">Загрузить</button>
+<!--input type="image" src="Img/glass-1.png" alt="glass-1" width="74" height="131"><button type="submit">Загрузить</button>-->
+                    </p>
+                    <label for="name"></label><input type="text" id="name" placeholder="Название коктейля">
+                    <label for="altername"></label><input type="text" id="altername" placeholder="Альтернативное название через запятую">
+                    <label for="about"></label><input type="text" id="about" placeholder="Краткое описание">
+                    <label for="instraction"></label><input type="text" id="instraction" placeholder="Инструкция для приготовления">
+                </form>
+            </fieldset>
+            <a href="ingredient.html">Ингридиенты</a>
+        </main>
+    </body>
+</html>
