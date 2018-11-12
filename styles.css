@@ -1,0 +1,48 @@
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 470px;
+    margin: 20px auto;
+ 
+}
+.menu {
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+    background-image: linear-gradient(to bottom, #589dd2 0%, #295691 100%);
+    border-radius: 5px;
+}
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+    background-image: linear-gradient(to bottom, #82bbe8 0%, #4882ca 100%);
+    border-radius: 5px;
+}
+
+
+.menu-list-item {
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 35px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    text-align: center;
+    color: #1b4680;
+    font-weight: bold;
+}
+.container {
+    width: 472px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding-top: 30px;
+}
+.container .form-block {
+    
+    border: none;
+}
