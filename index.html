@@ -9,26 +9,26 @@
         <header>
         <nav class="menu">
             <ul class="menu-list"> 
-                <li><a class="menu-list-item current" href="index.html">Описание</a></li>
-                <li><a class="menu-list-item" href="ingredient.html">Ингридиенты</a></li>
-                <li><a class="menu-list-item" href="param.html">Параметры</a></li>
-                <li><a class="menu-list-item" href="glass.html">Бокалы</a></li>
+                <li><a class="menu-list-item main current" href="index.html">Описание</a></li>
+                <li><a class="menu-list-item ingred" href="ingredient.html">Ингридиенты</a></li>
+                <li><a class="menu-list-item param" href="param.html">Параметры</a></li>
+                <li><a class="menu-list-item glusses" href="glass.html">Бокалы</a></li>
             </ul>
         </nav>
         </header>
         <main class="container">
             <fieldset class="form-block">
                 <legend>Описание</legend>
-                <form>
-                    <p>
-                        <img src="Img/glass-1.png" alt="glass-1" width="74" height="131">
-                        <button type="submit">Загрузить</button>
+                <form class="form-area">
+                    <p class="image">
+                        
 <!--input type="image" src="Img/glass-1.png" alt="glass-1" width="74" height="131"><button type="submit">Загрузить</button>-->
                     </p>
-                    <label for="name"></label><input type="text" id="name" placeholder="Название коктейля">
-                    <label for="altername"></label><input type="text" id="altername" placeholder="Альтернативное название через запятую">
-                    <label for="about"></label><input type="text" id="about" placeholder="Краткое описание">
-                    <label for="instraction"></label><input type="text" id="instraction" placeholder="Инструкция для приготовления">
+                    <button type="submit">Загрузить</button>
+                    <label class="name" for="name"></label><input type="text" id="name" placeholder="Название коктейля">
+                    <label class="altername" for="altername"></label><input type="text" id="altername" placeholder="Альтернативное название через запятую">
+                    <label class="about" for="about"></label><input type="text" id="about" placeholder="Краткое описание">
+                    <label class="instraction" for="instraction"></label><input type="text" id="instraction" placeholder="Инструкция для приготовления">
                 </form>
             </fieldset>
             <a href="ingredient.html">Ингридиенты</a>
