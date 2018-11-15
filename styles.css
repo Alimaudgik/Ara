@@ -115,8 +115,7 @@ legend::before {
     align-items: flex-start;
 }
 .form-area .part-1 {
-    display: flex;
-    flex-wrap: wrap;
+    
     margin: 0;
     padding: 0;
     flex-direction: row;
@@ -202,34 +201,59 @@ input::placeholder {
     color: #a6acb2;
 }
 .menu-next {
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 15px;
-    border-radius: 5px;
-    border-image: transparent;
+    border: 1px dashed red;
+}
+
+.menu-next li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 1px;
+    background-image: linear-gradient(to bottom, #589dd2, #295691);
+    margin-bottom: 15px;
+    border-radius: 5px 0 0 5px;
 }
 .menu-next a {
     display: inline-block;
     text-decoration: none;
     margin: 0;
     font-size: 12px;
-    line-height: 22px;
-    padding: 0px 5px;
+    line-height: 20px;
+    padding: 0px 4px;
     text-align: center;
     color: #ffffff;
     background-image: linear-gradient(to bottom, #82bbe8 0%, #4882ca 100%);/*уточниться*/
-    border: 1px solid;
-    border-image: linear-gradient(to bottom, #589dd2 0%, #295691 100%);
-    border-radius: 5px;
-    margin-bottom: 15px;
+    border-radius: 5px 0 0 5px;
+}
+.hidden {
+    visibility: hidden;
 }
 
 
 
 
 
+/*
+.menu-next a::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 22px;
+    background-image: linear-gradient(to bottom, red, green);
+    line-height: 20px;
+    padding: 0 4px;
+    z-index: -1;
+}
 
 /*
 .part-1 p {
