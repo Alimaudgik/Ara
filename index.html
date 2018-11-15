@@ -20,18 +20,23 @@
             <fieldset class="form-block">
                 <legend>Описание</legend>
                 <form class="form-area">
-                    <p class="image">
-                        
-<!--input type="image" src="Img/glass-1.png" alt="glass-1" width="74" height="131"><button type="submit">Загрузить</button>-->
-                    </p>
-                    <button type="submit">Загрузить</button>
-                    <label class="name" for="name"></label><input type="text" id="name" placeholder="Название коктейля">
-                    <label class="altername" for="altername"></label><input type="text" id="altername" placeholder="Альтернативное название через запятую">
-                    <label class="about" for="about"></label><input type="text" id="about" placeholder="Краткое описание">
-                    <label class="instraction" for="instraction"></label><input type="text" id="instraction" placeholder="Инструкция для приготовления">
+                        <div class="part-1">
+                            <div class="picture">
+                                <p class="img"></p>
+                            </div>
+                            <button class="button" type="submit">Загрузить</button>
+                        </div>
+                        <p class="part-2">
+                        <label class="name" for="name"></label><input type="text" id="name" placeholder="Название коктейля">
+                        <label class="altername" for="altername"></label><input type="text" id="altername" placeholder="Альтернативное название через запятую">
+                        <label class="about" for="about"></label><input type="text" id="about" placeholder="Краткое описание">
+                        </p>
+                        <p class="part-3">
+                        <label class="instraction" for="instraction"></label><input type="text" id="instraction" placeholder="Инструкция для приготовления">
+                        </p>
                 </form>
             </fieldset>
-            <a href="ingredient.html">Ингридиенты</a>
+            <p class="menu-next"><a href="ingredient.html">Ингридиенты</a></p>
         </main>
     </body>
 </html>
