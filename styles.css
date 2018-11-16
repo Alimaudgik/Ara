@@ -1,18 +1,21 @@
+*:focus {
+    box-shadow: 2px 2px 4px 0 lightblue;
+} 
 .form {
     font-family: Arial, Helvetica, sans-serif;
     width: 470px;
     margin: 20px auto;
- 
 }
-header {
-    
-}
+
 .menu {
     width: 100%;
     margin: 0;
     padding: 1px;
     background-image: linear-gradient(to bottom, #589dd2 0%, #295691 100%);
     border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgba(140, 150, 159, 0.75);
+    z-index: 1;
+    position: relative;
 
 }
 .menu-list {
@@ -24,14 +27,21 @@ header {
     line-height: 22px;
     background-image: linear-gradient(to bottom, #82bbe8 0%, #4882ca 100%);
     border-radius: 5px;
-    box-shadow: 0 5px 5px 0 rgba(140, 150, 159, 0.75);
-    z-index: 1;
-    position: relative;
+
 }
+.menu-list li {
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #285590;
+    width: 100%;
+}
+.menu-list li:last-child {
+    border-right: none;
+}
+
 .menu-list-item {
     margin: 0;
-    padding: 10px 0;
-    padding-left: 35px;
+    padding: 10px 10px 10px 25px;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -39,6 +49,10 @@ header {
     color: #1b4680;
     font-weight: bold;
 }
+.menu-list li:last-child .menu-list-item {
+    padding-right: 20px;
+}
+
 .menu-list-item::before {
     content: '';
     position: absolute;
@@ -49,25 +63,25 @@ header {
     background-image: url("Img/notepad.png");
     width: 20px;
     height: 20px;
-    left: 15px;
+    left: 5px;
 }
 .ingred::before {
     background-image: url("Img/bottle.png");
     width: 9px;
     height: 24px;
-    left: 21px;
+    left: 11px;
 }
 .param::before {
     background-image: url("Img/plate.png");
     width: 30px;
     height: 24px;
-    left: 12px;
+    left: 10px;
 }
 .glusses::before {
     background-image: url("Img/goblet.png");
     width: 9px;
     height: 24px;
-    left: 21px;
+    left: 11px;
 }
 .param {
     padding-left: 45px;
@@ -95,9 +109,8 @@ legend {
     padding-left: 30px;
     margin-bottom: 8px;
     color: #505050;
-    border: 1px dashed #f00;
 }
-legend::before {
+.legend-index::before {
     content: '';
     position: absolute;
     left: 5px;
@@ -120,7 +133,6 @@ legend::before {
     padding: 0;
     flex-direction: row;
     flex-basis: 102px;
-    border: 1px dashed red;
 }
 .form-area .picture {
     margin: 0;
@@ -149,7 +161,6 @@ legend::before {
     margin: 0;
     margin-bottom: 8px;
     font-size: 12px;
-
     text-align: center;
     background-image: linear-gradient(to bottom, #80bae7, #4d86cd);
     border: 1px solid;
@@ -159,11 +170,13 @@ legend::before {
     height: 24px;
     border-radius: 5px;
 }
+.button:hover {
+    cursor: pointer;
+}
 
 .part-2 {
     margin: 0;
     padding: 0;
-    border: 1px dashed red;
     width: 327px;
 }
 
@@ -195,6 +208,11 @@ legend::before {
     margin-bottom: 15px;
 
 }
+input {
+    color: #6b6b6b;
+
+}
+
 input::placeholder {
     font-size: 11px;
     line-height: 22px;
@@ -208,19 +226,18 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 15px;
-    border: 1px dashed red;
 }
 
-.menu-next li {
+.menu-next .menu-next-href {
     display: inline-block;
     text-decoration: none;
     margin: 0;
     padding: 1px;
     background-image: linear-gradient(to bottom, #589dd2, #295691);
     margin-bottom: 15px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
 }
-.menu-next a {
+.menu-next .menu-next-href a {
     display: inline-block;
     text-decoration: none;
     margin: 0;
@@ -230,12 +247,24 @@ input::placeholder {
     text-align: center;
     color: #ffffff;
     background-image: linear-gradient(to bottom, #82bbe8 0%, #4882ca 100%);/*уточниться*/
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
 }
+
+
 .hidden {
     visibility: hidden;
 }
 
+.current {
+    background-image: linear-gradient(to bottom, #589dd2 0%, #2a5792);
+    color: #ffffff;
+}
+input:hover,
+.button:hover,
+.menu-next-href:hover,
+.menu-list-item:hover {
+box-shadow: 0 0 12px 0 gray;
+}
 
 
 

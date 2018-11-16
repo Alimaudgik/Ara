@@ -5,27 +5,27 @@
         <title>Step Form</title>
         <link href="styles.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="form glass">
         <header>
-        <nav>
-            <ul>
-                <li><a class="current" href="index.html">Описание</a></li>
-                <li><a href="ingredient.html">Ингридиенты</a></li>
-                <li><a href="param.html">Параметры</a></li>
-                <li><a href="glass.html">Бокалы</a></li>
+        <nav class="menu">
+            <ul class="menu-list"> 
+                <li><a class="menu-list-item main" href="index.html">Описание</a></li>
+                <li><a class="menu-list-item ingred" href="ingredient.html">Ингридиенты</a></li>
+                <li><a class="menu-list-item param" href="param.html">Параметры</a></li>
+                <li><a class="menu-list-item glass current" href="glass.html">Бокалы</a></li>
             </ul>
         </nav>
         </header>
-        <main>
-            <fieldset>
-                <legend>Бокалы</legend>
-                <form>
-
+        <main class="container">
+            <fieldset class="form-block form-block-glass">
+                <legend class="legend-glass"></legend>
+                <form class="form-area">
+ 
                 </form>
-            <button type="submit">Отправить</button>
             </fieldset>
-            <ul>
-                <li><a href="ingredient.html">Ингридиенты</a></li>
+            <ul class="menu-next">
+                <li class="menu-next-href"><a href="param.html">Параметры</a></li>
+                <li class="menu-next-href hidden"><a href="hidden"></a></li>
             </ul>
         </main>
     </body>

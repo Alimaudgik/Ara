@@ -5,28 +5,27 @@
         <title>Step Form</title>
         <link href="styles.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="form param">
         <header>
-        <nav>
-            <ul>
-                <li><a class="current" href="index.html">Описание</a></li>
-                <li><a href="ingredient.html">Ингридиенты</a></li>
-                <li><a href="param.html">Параметры</a></li>
-                <li><a href="glass.html">Бокалы</a></li>
+        <nav class="menu">
+            <ul class="menu-list"> 
+                <li><a class="menu-list-item main" href="index.html">Описание</a></li>
+                <li><a class="menu-list-item ingred" href="ingredient.html">Ингридиенты</a></li>
+                <li><a class="menu-list-item param current" href="param.html">Параметры</a></li>
+                <li><a class="menu-list-item glusses" href="glass.html">Бокалы</a></li>
             </ul>
         </nav>
         </header>
-        <main>
-            <fieldset>
-                <legend>Параметры</legend>
-                <form>
-
+        <main class="container">
+            <fieldset class="form-block form-block-param">
+                <legend class="legend-param"></legend>
+                <form class="form-area">
+ 
                 </form>
             </fieldset>
-            <a href="ingredient.html">Бокалы</a>
-            <ul>
-                <li><a href="ingredient.html">Ингридиенты</a></li>
-                <li><a href="glass.html">Бокалы</a></li>
+            <ul class="menu-next">
+                <li class="menu-next-href"><a href="ingredient.html">Ингредиенты</a></li>
+                <li class="menu-next-href"><a href="glass.html">Бокалы</a></li>
             </ul>
         </main>
     </body>
