@@ -61,27 +61,27 @@
 }
 .main::before {
     background-image: url("Img/notepad.png");
-    width: 20px;
-    height: 20px;
-    left: 5px;
+    width: 22px;
+    height: 21px;
+    left: 3px;
 }
 .ingred::before {
     background-image: url("Img/bottle.png");
-    width: 9px;
-    height: 24px;
-    left: 11px;
+    width: 17px;
+    height: 26px;
+    left: 5px;
 }
 .param::before {
     background-image: url("Img/plate.png");
-    width: 30px;
-    height: 24px;
-    left: 10px;
+    width: 34px;
+    height: 26px;
+    left: 6px;
 }
 .glusses::before {
     background-image: url("Img/goblet.png");
-    width: 9px;
-    height: 24px;
-    left: 11px;
+    width: 13px;
+    height: 26px;
+    left: 5px;
 }
 .param {
     padding-left: 45px;
@@ -106,20 +106,101 @@ legend {
     margin: 0;
     padding: 0;
     position: relative;
-    padding-left: 30px;
     margin-bottom: 8px;
     color: #505050;
+    text-align: left;
+    width: 100%;
 }
-.legend-index::before {
+legend.legend-index {
+    padding-left: 25px;
+}
+legend.legend-ingredients,
+legend.legend-glass {
+    padding-left: 20px;
+}
+legend.legend-param {
+    padding-left: 40px;
+    z-index: 1;
+}
+
+.legend-index::before,
+.legend-ingredients::before,
+.legend-param::before,
+.legend-glass::before,
+.legend-ingredients::after  {
     content: '';
     position: absolute;
-    left: 5px;
-    top: -2px;
-    background-image: url("Img/notepad.png");
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    
+    
 }
+.legend-index::before {
+    background-image: url("Img/notepad-gr.png");
+    width: 22px;
+    height: 21px;
+    left: 0;
+    top: -2px;
+}
+.legend-ingredients::before {
+    background-image: url("Img/bottle-gr.png");
+    width: 17px;
+    height: 32px;
+    left: 0;
+    top: -12px;
+}
+.legend-ingredients::after {
+    background-image: url("Img/strawberry.png");
+    width: 24px;
+    height: 21px;
+    right: 35px;
+    top: -2px;
+}
+.strawberry {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 8px;
+    color: #ffffff;
+    background-image: linear-gradient(to top, #579cd1, #2a5893) /*url("Img/three.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center 15px/*, 100% 100%*/;
+    border-radius: 2px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 2;
+}/*
+.strawberry::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("Img/three.png");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    border: 1px dashed red;
+    z-index: 1;
+    left: -5px;
+    top: 20px;
+    position: relative;*/
+}
+.legend-param::before {
+    background-image: url("Img/plate-gr.png");
+    width: 34px;
+    height: 26px;
+    left: 0;
+    top: -6px;
+}
+.legend-glass::before {
+    background-image: url("Img/goblet-gr.png");
+    width: 13px;
+    height: 26px;
+    left: 0;
+    top: -8px;
+}
+
+
 
 .form-area {
     display: flex;
@@ -188,7 +269,7 @@ legend {
     border: 1px solid #8c969f;
     width: 305px;
     border-radius: 5px;
-    box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.36)
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.36)
 }
 .part-2 #about {
     height: 62px;
@@ -265,6 +346,75 @@ input:hover,
 .menu-list-item:hover {
 box-shadow: 0 0 12px 0 gray;
 }
+
+/*Ingredients*/
+.form-list-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 11px;
+    line-height: 22px;
+}
+.form-list-item:last-child {
+    margin-bottom: 26px;
+}
+
+.form-list-item .name-ingrid,
+.form-list-item #amount,
+.form-list-item .name-cons,
+.form-list-item .checkbox-ingred {
+    border-radius: 5px;
+    border: 1px solid #a6acb2;
+    padding: 3px 10px;
+    box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.36);
+    margin-right: 15px;
+}
+
+.form-list-item .name-ingrid {
+    width: 205px;
+}
+.form-list-item #amount {
+    width: 58px;
+}
+.form-list-item .name-cons {
+    width: 92;
+    margin-right: 23px;
+}
+.form-list-item select option:first-child,
+.form-list-item select option:disabled {
+    color: #a6acb2;
+}
+.form-list-item .checkbox-ingred{
+    width: 15px;
+    height: 15px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+    background-image: linear-gradient(to bottom, #dee4ea, #f5f7f9);
+    padding: 0;
+    position: relative;
+    margin: 4px 0;
+}
+.checkbox-ingred::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 2px solid #5187b9;
+    border-bottom: 2px solid #5187b9;
+    transform: rotate(-45deg);
+    display: none;
+}
+#checkbox-ingred {
+    display: none;
+}
+#checkbox-ingred:checked + .checkbox-ingred::after {
+    display: inline-block;
+}
+
 
 
 
