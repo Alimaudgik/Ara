@@ -148,43 +148,62 @@ legend.legend-param {
     left: 0;
     top: -12px;
 }
+
+/*
 .legend-ingredients::after {
     background-image: url("Img/strawberry.png");
     width: 24px;
     height: 21px;
     right: 35px;
-    top: -2px;
-}
+    top: -2px;*/
+
 .strawberry {
     display: inline-block;
-    font-size: 12px;
-    line-height: 22px;
-    padding: 0 8px;
-    color: #ffffff;
-    background-image: linear-gradient(to top, #579cd1, #2a5893) /*url("Img/three.png");
+    width: 24px;
+    height: 21px;
+    background-image: url("Img/strawberry.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 35px;
+    top: -2px;
+    /*right: 35px;
+    top: -2px;
     background-size: 16px 16px;
     background-repeat: no-repeat;
-    background-position: center 15px/*, 100% 100%*/;
-    border-radius: 2px;
-    position: absolute;
-    right: -5px;
-    top: -5px;
-    z-index: 2;
-}/*
+    background-position: center 15px;
+    z-index: 1;
+    position: absolute;*/
+
+}
 .strawberry::after {
     content: '';
     display: inline-block;
     width: 16px;
     height: 16px;
     background-image: url("Img/three.png");
-    background-size: 16px 16px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    border: 1px dashed red;
     z-index: 1;
-    left: -5px;
-    top: 20px;
-    position: relative;*/
+    left: 0;
+    top: -10px;
+    position: absolute;
 }
+.strawberry::before {
+    content: 'Улучшения?';
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 0 8px;
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #81bae8, #4a84cb);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+
 .legend-param::before {
     background-image: url("Img/plate-gr.png");
     width: 34px;
