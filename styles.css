@@ -166,6 +166,7 @@ legend.legend-param {
     position: absolute;
     right: 35px;
     top: -2px;
+    transition: top 1s ease-out 3s;
     /*right: 35px;
     top: -2px;
     background-size: 16px 16px;
@@ -183,10 +184,12 @@ legend.legend-param {
     background-image: url("Img/three.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
-    z-index: 1;
-    left: 0;
-    top: -10px;
+    z-index: 2;
+    left: 5px;
+    top: -17px;
     position: absolute;
+    display: none;
+    transition: top 1s ease-out 3s;
 }
 .strawberry::before {
     content: 'Улучшения?';
@@ -198,9 +201,19 @@ legend.legend-param {
     border-radius: 2px;
     background-image: linear-gradient(to top, #81bae8, #4a84cb);
     z-index: 1;
-    left: 0;
-    top: 0;
+    left: -27px;
+    top: -35px;
     position: absolute;
+    border: 1px solid rgb(52, 85, 128);
+    display: none;
+    transition: top 1s ease-out 3s;
+}
+.strawberry:hover::before,
+.strawberry:hover::after {
+    display: inline-block;
+    margin: 0;
+
+
 }
 
 
@@ -432,6 +445,17 @@ box-shadow: 0 0 12px 0 gray;
 }
 #checkbox-ingred:checked + .checkbox-ingred::after {
     display: inline-block;
+}
+
+
+/*Parametres*/
+
+.form-list-item-inputs {
+    flex-wrap: wrap;
+}
+.form-list-item-inputs label {
+    width: 32%;
+    border: 1px dashed grey;
 }
 
 
