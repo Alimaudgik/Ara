@@ -19,85 +19,88 @@
         <main class="container">
             <fieldset class="form-block form-block-param">
                 <legend class="legend-param">Параметры</legend>
-                <form class="form-area">
-                    <div class="form-list-item">
-                        <label for="portion-amount" class="portion-amount">Порции<br>
+                <form class="form-area param-1">
+                    <div class="column column-flex">
+                        <div class="param-block">
+                            <p>Порции</p>
                             <input id="portion-amount" type="number" min="1" max="1000" value="1">
-                        </label>
-                        <label for="time" class="time">Время<br>
+                        </div>
+                        <div class="param-block">
+                            <p>Время</p>
                             <select id="time" class="time">
                             <option value="5 min" selected>5 мин</option>
                             <option value="10 min">10 мин</option>
                             <option value="15 min">15 мин</option>
                             </select>
-                        </label>
-                        <label for="complexity" class="complexity">Сложность<br>
+                        </div>
+                    </div>
+                    <div class="column param-block width">
+                            <p>Сложность</p>
                             <select id="complexity" class="complexity">
                             <option value="preview" disabled selected>Выбирите из списка</option>
                             <option value="hard" >Сложный</option>
                             <option value="medium">Средний</option>
                             <option value="light">Легкий</option>
                             </select>
-                        </label>
-                        <label for="method" class="method">Метод<br>
+                    </div>
+                    <div class="column param-block width">
+                            <p>Метод</p>
                             <select name="method" id="method" class="method">
                             <option value="preview" disabled selected>Выбирите из списка</option>
                             <option value="shaker">в шейкере</option>
                             <option value="blend">в блендере</option>
                             <option value="mixer">в миксире</option>
                             </select>
-                        </label>
                     </div>
                 </form>
             </fieldset>
             <fieldset class="form-block form-block-param">
                 <legend class="coctail-type">Тип коктейля</legend>
-                <form class="form-area">
-                    <div class="form-list-item">
-                        <label for="strength" class="strength">По крепкости<br>
+                <form class="form-area param-2">
+                        <div class="column param-block width">
+                            <p>По крепости</p>
                             <select id="strength" class="strength">
                             <option value="preview" disabled selected>Выбирите из списка</option>
                             <option value="40">&gt 40</option>
                             <option value="25">&gt 25</option>
                             <option value="10">&gt 10</option>
                             </select>
-                        </label>
-                        <label for="base" class="base">На основе<br>
+                        </div>
+                        <div class="column param-block width">
+                            <p>На основе</p>
                             <select id="base" class="base">
                             <option value="preview" disabled selected>Выбирите из списка</option>
                             <option value="burn" >Спирт</option>
                             <option value="middle">Сок</option>
                             <option value="low">Вода</option>
                             </select>
-                        </label>
-                        <label for="complexity" class="complexity">По типу<br>
+                        </div>
+                        <div class="column param-block width">
+                            <p>По типу</p>
                             <select id="type" class="type">
                             <option value="preview" disabled selected>Выбирите из списка</option>
                             <option value="for old">Взрослый</option>
                             <option value="for teen">Средний</option>
                             <option value="for child">Детский</option>
                             </select>
-                        </label>
-                    </div>
+                        </div>
                 </form>
             </fieldset>
             <fieldset class="form-block form-block-param">
                 <legend class="tegs">Теги</legend>
-                <form class="form-area">
-                    <div class="form-list-item form-list-item-inputs">
-                        <label class="Bracing" for="Bracing"><input id="Bracing" type="checkbox">Бодрящие</label>
-                        <label class="Salty" for="Salty"><input id="Salty" type="checkbox">Соленые</label>
-                        <label class="Unusual" for="Unusual"><input id="Unusual" type="checkbox">Необыч. по употреб.</label>
-                        <label class="Bitter" for="Bitter"><input id="Bitter" type="checkbox">Горькие</label>
-                        <label class="Herbal" for="Herbal"><input id="Herbal" type="checkbox">Травяные</label>
-                        <label class="For-companies" for="For-companies"><input id="For-companies" type="checkbox">Для компаний</label>
-                        <label class="Sour" for="Sour"><input id="Sour" type="checkbox">Кислые</label>
-                        <label class="Tropical" for="Tropical"><input id="Tropical" type="checkbox">Тропические</label>
-                        <label class="For-friend" for="For-friends"><input id="For-friends" type="checkbox">Для друзей</label>
-                        <label class="Sweet" for="Sweet"><input id="Sweet" type="checkbox">Сладкие</label>
-                        <label class="Fruit" for="Fruit"><input id="Fruit" type="checkbox">Фруктовые</label>
-                        <label class="Gut-sweet" for="Gut-sweet"><input id="Gut-sweet" type="checkbox">Ппц сладкие</label>
-                    </div>
+                <form class="form-area param-3">
+                        <input id="Bracing" class="checkbox-hidden" type="checkbox" checked><label class="Bracing checkbox-item" for="Bracing">Бодрящие</label>
+                        <input id="Salty" class="checkbox-hidden" type="checkbox" checked><label class="Salty checkbox-item" for="Salty">Соленые</label>
+                        <input id="Unusual" class="checkbox-hidden" type="checkbox" checked><label class="Unusual checkbox-item" for="Unusual">Необыч. по употреб.</label>
+                        <input id="Bitter" class="checkbox-hidden" type="checkbox"><label class="Bitter checkbox-item" for="Bitter">Горькие</label>
+                        <input id="Herbal" class="checkbox-hidden" type="checkbox"> <label class="Herbal checkbox-item" for="Herbal">Травяные</label>
+                        <input id="For-companies" class="checkbox-hidden" type="checkbox"><label class="For-companies checkbox-item" for="For-companies">Для компаний</label>
+                        <input id="Sour" class="checkbox-hidden" type="checkbox"><label class="Sour checkbox-item" for="Sour">Кислые</label>
+                        <input id="Tropical" class="checkbox-hidden" type="checkbox"><label class="Tropical checkbox-item" for="Tropical">Тропические</label>
+                        <input id="For-friends" class="checkbox-hidden" type="checkbox"><label class="For-friend checkbox-item" for="For-friends">Для друзей</label>
+                        <input id="Sweet" class="checkbox-hidden" type="checkbox"><label class="Sweet checkbox-item" for="Sweet">Сладкие</label>
+                        <input id="Fruit" class="checkbox-hidden" type="checkbox"><label class="Fruit checkbox-item" for="Fruit">Фруктовые</label>
+                        <input id="Gut-sweet" class="checkbox-hidden" type="checkbox"><label class="Gut-sweet checkbox-item" for="Gut-sweet">Ппц сладкие</label>
                 </form>
             </fieldset>
             <ul class="menu-next">
