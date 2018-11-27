@@ -465,10 +465,10 @@ box-shadow: 0 0 12px 0 gray;
     transform: rotate(-45deg);
     display: none;
 }
-#checkbox-ingred {
+input[id*='checkbox-ingred'] {
     display: none;
 }
-#checkbox-ingred:checked + .checkbox-ingred::after {
+input[id*='checkbox-ingred']:checked + .checkbox-ingred::after {
     display: inline-block;
 }
 
