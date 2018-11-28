@@ -585,6 +585,48 @@ input[id*='checkbox-ingred']:checked + .checkbox-ingred::after {
     width: 100%;
 }
 
+/*glasses*/
+.legend-glass {
+    margin-bottom: 5px;
+}
+.glasses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.glasses div {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 145px;
+    border: 1px solid #8c969f;
+    border-radius: 5px;
+    background: #ffffff url('img/Glasses/glass-1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.form-block-glass {
+    margin-bottom: 5px;
+}
+.glasses div .check {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 3px auto;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-image: linear-gradient(to top, #8cbfe9, #5e92d1 );
+    border: none;
+    border-top: 2px solid #285590;
+    box-shadow: none;
+    opacity: 0.9;
+}
 
 
 
