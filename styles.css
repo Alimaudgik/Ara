@@ -594,24 +594,85 @@ input[id*='checkbox-ingred']:checked + .checkbox-ingred::after {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.glasses div {
+.glasses .glass-1 {
+    background: #ffffff url('img/Glasses/glass-1.png')
+}
+.glasses .glass-2 {
+    background: #ffffff url('img/Glasses/glass-2.png')
+}
+.glasses .glass-3 {
+    background: #ffffff url('img/Glasses/glass-3.png')
+}
+.glasses .glass-4 {
+    background: #ffffff url('img/Glasses/glass-4.png')
+}
+.glasses .glass-5 {
+    background: #ffffff url('img/Glasses/glass-5.png')
+}
+.glasses .glass-6 {
+    background: #ffffff url('img/Glasses/glass-6.png')
+}
+.glasses .glass-7 {
+    background: #ffffff url('img/Glasses/glass-7.png')
+}
+.glasses .glass-8 {
+    background: #ffffff url('img/Glasses/glass-8.png')
+}
+.glasses .glass-9 {
+    background: #ffffff url('img/Glasses/glass-9.png')
+}
+.glasses .glass-10 {
+    background: #ffffff url('img/Glasses/glass-10.png')
+}
+.glasses .glass-11 {
+    background: #ffffff url('img/Glasses/glass-11.png')
+}
+.glasses .glass-12 {
+    background: #ffffff url('img/Glasses/glass-12.png')
+}
+.glasses .glass-13 {
+    background: #ffffff url('img/Glasses/glass-13.png')
+}
+.glasses .glass-14 {
+    background: #ffffff url('img/Glasses/glass-14.png')
+}
+.glasses .glass-15 {
+    background: #ffffff url('img/Glasses/glass-15.png')
+}
+.glasses .glass-16 {
+    background: #ffffff url('img/Glasses/glass-16.png')
+}
+.glasses .glass-17 {
+    background: #ffffff url('img/Glasses/glass-17.png')
+}
+.glasses .glass-18 {
+    background: #ffffff url('img/Glasses/glass-18.png')
+}
+.glasses .glass-19 {
+    background: #ffffff;
+}
+.glasses .glass-20 {
+    background: #ffffff;
+}
+.glasses .glass-check {
     margin: 0;
     padding: 0;
     width: 100px;
     height: 145px;
     border: 1px solid #8c969f;
     border-radius: 5px;
-    background: #ffffff url('img/Glasses/glass-1.png');
     background-repeat: no-repeat;
     background-position: 50% 20px;
     margin-bottom: 10px;
     position: relative;
     overflow: hidden;
 }
+
 .form-block-glass {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
-.glasses div .check {
+.glasses .glass-check .check {
+    margin: 0;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -621,11 +682,86 @@ input[id*='checkbox-ingred']:checked + .checkbox-ingred::after {
     width: 100%;
     color: #ffffff;
     text-align: center;
-    background-image: linear-gradient(to top, #8cbfe9, #5e92d1 );
+    background: linear-gradient(to top, rgba(140, 191, 233, 0.9), rgba(94, 146, 209, 0.9));
     border: none;
     border-top: 2px solid #285590;
     box-shadow: none;
-    opacity: 0.9;
+    padding-left: 15px;
+}
+.glasses .glass-check .check::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    width: 8px;
+    height: 4px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
+.glasses .glass-check+.comment::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url("Img/three.png");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        left: 42px;
+        top: -17px;
+        position: absolute;
+        display: none;
+        transition: top 1s ease-out 3s;
+    }
+.glasses .glass-check+.comment::after {
+        content: 'Бокал для коктейлей. Берём этот?';
+        color: #ffffff;
+        width: 150px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 0 8px;
+        border-radius: 2px;
+        background-image: linear-gradient(to top, #81bae8, #4a84cb);
+        z-index: 1;
+        left: -27px;
+        top: -58px;
+        position: absolute;
+        border: 1px solid rgb(52, 85, 128);
+        display: none;
+        transition: top 1s ease-out 3s;
+}
+.glass-check:hover,
+.glass-check button:hover {
+    cursor: pointer;
+}
+.glasses .glass-check:hover+.comment::after,
+.glasses .glass-check:hover+.comment::before {
+    display: inline-block;
+    margin: 0;
+}
+.glass-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.mn-glass {
+    position: relative;
+}
+.mn-button {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 0;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px 17px;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #82bbe8 0%, #4882ca 100%);/*уточниться*/
+    border-radius: 5px;
+    border: 1px solid #295691;
 }
 
 
